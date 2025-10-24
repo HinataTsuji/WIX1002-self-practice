@@ -1,0 +1,20 @@
+public class VariablesExample {
+    public static void main(String[] args) {
+        // Integer for whole numbers
+        int studentAge = 21;
+        
+        // Double for decimal numbers
+        double courseFee = 550.75;
+
+        // Character for single letters/symbols (uses single quotes)
+        char finalGrade = 'A';
+
+        // Boolean for true/false values
+        boolean isRegistered = true;
+
+        System.out.println("Student Age: " + studentAge);
+        System.out.println("Course Fee: RM" + courseFee);
+        System.out.println("Final Grade: " + finalGrade);
+        System.out.println("Is Registered: " + isRegistered);
+    }
+}
