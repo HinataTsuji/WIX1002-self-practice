@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Main {
+class W0503E {
     public static void main(String[] args) {
         //ask how many numbers then repeat for that many times
         //count even numbers and odd numbers total
