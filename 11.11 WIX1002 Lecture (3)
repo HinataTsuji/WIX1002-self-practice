@@ -4,17 +4,16 @@ class Main {
         //enter answer until yes or no then stop
         Scanner input = new Scanner(System.in);
         String ans;
-        String no = "No";
         do {
             System.out.print("Do you wish to continue? [yes/no] ");
             ans = input.nextLine();
-            if(ans.equalsIgnoreCase("Yes") || ans.equalsIgnoreCase(no))
+            if(ans.equalsIgnoreCase("Yes") || ans.equalsIgnoreCase("No"))
                 continue;
             else {
                 System.out.print("Enter again, ");
                 continue;
             } 
             
-        } while (!(ans.equalsIgnoreCase(no)));
+        } while (!(ans.equalsIgnoreCase("No")));
 }
 }
