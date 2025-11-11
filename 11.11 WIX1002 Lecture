@@ -1,9 +1,23 @@
 class Main {
     public static void main(String[] args) {
         int max=20;
-        for (int i=1; i<=max; i++){
+        //for loop
+        int i=1;
+        for (i=1; i<=max; i++){
             if (i%2==0)
                 System.out.println(i);
         }
+        //while loop
+        i=1;
+        while (i<=max){
+            if (i%2==0)
+                System.out.println(i);
+        }
+        //do while loop
+        i=1;
+        do {
+            if (i%2==0)
+                System.out.println(i);
+        } while (k<=max);
     }
 }
