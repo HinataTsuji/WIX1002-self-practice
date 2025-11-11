@@ -1,1 +1,15 @@
-start coding
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        //enter a number until enter 0, print final sum
+        Scanner input = new Scanner(System.in);
+        int sum=0, num;
+        do {
+            System.out.print("Enter a number [enter 0 to exit]: ");
+            num = input.nextInt();
+            sum+=num;
+        } while (num!=0);
+        System.out.println("The sum of numbers entered is: " + sum);
+    }
+}
+
