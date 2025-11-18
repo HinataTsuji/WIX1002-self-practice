@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Random;
+class Main {
+    public static void main(String[] args) {
+        Random g = new Random();
+        char [] gender = new char[100];
+        for (int i=0;i<gender.length;i++){
+            boolean studentgen=g.nextBoolean();
+            if (studentgen==true)
+                gender[i]='M';
+            else
+                gender[i]='F';
+        }
+        int sumofFemale=0;
+        for (int j=0;j<gender.length; j++){
+            if (gender[j]=='F')
+                sumofFemale+=1;
+        }
+        System.out.print("Sum of Female Students: "+sumofFemale);
+    }
+}
