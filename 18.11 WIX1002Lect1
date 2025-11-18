@@ -2,7 +2,7 @@
 // Use this editor to write, compile and run your Java code online
 
 class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) { //initializing and updating an array
         int [] number = new int[10];
         int [] numberWithValue = {11,12,13,14,15};
         System.out.println(numberWithValue[0]);
@@ -14,6 +14,19 @@ class Main {
         System.out.println(stringWithValue[2]);
         stringWithValue[2]="Hello";
         System.out.println(stringWithValue[2]);
-        
+    }
+}
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        int [] number = {0,1,2,3,4,5,6,7};
+        int i=5;
+        System.out.println(number[i]);
+        System.out.println("Using loop"); //printing an array using for loop
+        for (i=0;i<number.length;i++)
+            System.out.print(number[i]+" ");
     }
 }
