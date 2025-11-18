@@ -1,0 +1,26 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Random;
+class Main {
+    public static void main(String[] args) {
+        Random g = new Random();
+        int[]num=new int[20];
+        for (int i=0;i<num.length;i++){
+            num[i]=g.nextInt(100);
+            System.out.print(num[i]+" ");
+        }
+        for (int j=0;j<num.length; j++){
+            for(int k=0;k<num.length-1;k++){
+                if(num[k]>num[k+1]){
+                    int hold=num[k];
+                    num[k]=num[k+1];
+                    num[k+1]=hold;
+                }
+            }
+        }
+        System.out.println("\nBubble Sort");
+        for (int m=0;m<num.length;m++){
+            System.out.print(num[m]+" ");
+        }
+    }
+}
