@@ -6,7 +6,7 @@ class Main {
         Random g = new Random();
         char [] gender = new char[100];
         for (int i=0;i<gender.length;i++){
-            boolean studentgen=g.nextBoolean();
+            boolean studentgen=g.nextBoolean(); //OR gender[i]=g.nextBoolean()? 'M':'F'; directly
             if (studentgen==true)
                 gender[i]='M';
             else
