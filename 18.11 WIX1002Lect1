@@ -1,0 +1,19 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        int [] number = new int[10];
+        int [] numberWithValue = {11,12,13,14,15};
+        System.out.println(numberWithValue[0]);
+        System.out.println(numberWithValue[1]);
+        numberWithValue[0]=54;
+        System.out.println(numberWithValue[0]);
+        System.out.println(numberWithValue[1]);
+        String [] stringWithValue = {"Zero", "One", "Two", "Three", "Four"};
+        System.out.println(stringWithValue[2]);
+        stringWithValue[2]="Hello";
+        System.out.println(stringWithValue[2]);
+        
+    }
+}
