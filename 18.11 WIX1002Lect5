@@ -10,7 +10,7 @@ class Main {
             System.out.print(num[i]+" ");
         }
         for (int j=0;j<num.length; j++){
-            for(int k=0;k<num.length-1;k++){
+            for(int k=0;k<num.length-1;k++){ //get the last value
                 if(num[k]>num[k+1]){
                     int hold=num[k];
                     num[k]=num[k+1];
