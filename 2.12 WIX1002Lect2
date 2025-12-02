@@ -1,0 +1,45 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Random;
+class Main {
+    //row is shoe size 6-10
+    //column is day of the week mon-sun
+    public static void main(String[] args) {
+        int [][] shoeInventory=new int[5][7];
+        Random g = new Random();
+        //assign values into rows
+        for (int i=0; i<shoeInventory.length; i++){
+            for (int j=0; j<shoeInventory.length; j++){
+                shoeInventory[i][j]=g.nextInt(101);
+            }
+        }
+        int max=0, rowindex=0, columnindex=0;
+        for (int i=0; i<shoeInventory.length; i++){
+            for (int j=0; j<shoeInventory.length; j++){
+                if (shoeInventory[i][j]>max){
+                    max=shoeInventory[i][j];
+                    rowindex=i;
+                    columnindex=j;
+                }
+            }
+        }
+        //check days
+        String days;
+        if (columnindex==0)
+            days="Monday";
+        else if (columnindex==1)
+            days="Tuesday";
+        else if (columnindex==2)
+            days="Wednesday";
+        else if (columnindex==3)
+            days="Thursday";
+        else if (columnindex==4)
+            days="Friday";
+        else if (columnindex==5)
+            days="Saturday";
+        else 
+            days="Sunday";
+        //print the highest sales
+        System.out.println("The highest sales: Size "+(rowindex+6)+" ("+days+")"+" with "+shoeInventory[rowindex][columnindex]+" pairs");
+    }
+}
