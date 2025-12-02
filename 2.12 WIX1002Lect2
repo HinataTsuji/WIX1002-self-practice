@@ -10,9 +10,11 @@ class Main {
         Random g = new Random();
         //assign values into rows
         for (int i=0; i<shoeInventory.length; i++){
-            for (int j=0; j<shoeInventory.length; j++){
+            for (int j=0; j<days.length; j++){
                 shoeInventory[i][j]=g.nextInt(101);
+                System.out.print(shoeInventory[i][j]+" ");
             }
+            System.out.println();
         }
         int max=0, rowindex=0, columnindex=0;
         for (int i=0; i<shoeInventory.length; i++){
