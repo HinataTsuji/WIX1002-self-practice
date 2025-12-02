@@ -6,6 +6,7 @@ class Main {
     //column is day of the week mon-sun
     public static void main(String[] args) {
         int [][] shoeInventory=new int[5][7];
+        String []days={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
         Random g = new Random();
         //assign values into rows
         for (int i=0; i<shoeInventory.length; i++){
@@ -23,23 +24,7 @@ class Main {
                 }
             }
         }
-        //check days
-        String days;
-        if (columnindex==0)
-            days="Monday";
-        else if (columnindex==1)
-            days="Tuesday";
-        else if (columnindex==2)
-            days="Wednesday";
-        else if (columnindex==3)
-            days="Thursday";
-        else if (columnindex==4)
-            days="Friday";
-        else if (columnindex==5)
-            days="Saturday";
-        else 
-            days="Sunday";
         //print the highest sales
-        System.out.println("The highest sales: Size "+(rowindex+6)+" ("+days+")"+" with "+shoeInventory[rowindex][columnindex]+" pairs");
+        System.out.println("The highest sales: Size "+(rowindex+6)+" ("+days[columnindex]+")"+" with "+shoeInventory[rowindex][columnindex]+" pairs");
     }
 }
